@@ -34,23 +34,54 @@ class TicTacToe
     input.strip.to_i - 1
   end
 
-  def move(index, token)
-
+  def move(index, token = "X")
+    if valid_move?(index) && (token == "X" || token == "O") 
+      @board[index] = token
+    end
   end
 
   def position_taken?(index)
-
+    @board[index] != " "
   end
 
   def valid_move?(index)
-
+    position_taken(index) && (index >= 0 && index <= 8)
   end
 
   def turn
 
   end
 
-  def
+  def turn_count
 
   end
+
+  def current_plaayer
+
+  end
+
+  def won?
+
+  end
+
+  def full?
+
+  end
+
+  def draw?
+
+  end
+
+  def over?
+
+  end
+
+  def winner
+
+  end
+
+  def play
+
+  end
+  
 end
