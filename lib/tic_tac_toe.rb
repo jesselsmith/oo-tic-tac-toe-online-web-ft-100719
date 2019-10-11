@@ -9,15 +9,19 @@ class TicTacToe
     [0, 4, 8], #top left to bottom right diagonal
     [2, 4, 6] #top right to bottom left diagonal
   ]
+
   def initialize
     @board = Array.new(9, " ")
   end
+
   def display_row(row)
     puts " #{row[0]} | #{row[1]} | #{row[2]} "
   end
+
   def display_line
     puts "----------"
   end
+
   def display_board
     display_row(@board[0..2])
     display_line
@@ -26,5 +30,26 @@ class TicTacToe
     display_row(@board[6..8])
   end
 
+  def input_to_index(input)
+    input.strip.to_i - 1
+  end
 
+  def move(index, token)
+
+  end
+
+  def position_taken?(index)
+    
+  end
+
+  def valid_move?(index)
+
+  end
+
+  def turn
+
+  end
+
+  def
+  
 end
