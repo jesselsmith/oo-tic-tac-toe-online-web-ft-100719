@@ -35,7 +35,7 @@ class TicTacToe
   end
 
   def move(index, token = "X")
-    if valid_move?(index) && (token == "X" || token == "O") 
+    if valid_move?(index) && (token == "X" || token == "O")
       @board[index] = token
     end
   end
@@ -83,5 +83,5 @@ class TicTacToe
   def play
 
   end
-  
+
 end
